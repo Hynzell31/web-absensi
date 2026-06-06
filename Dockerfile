@@ -1,49 +1,34 @@
-FROM php:8.1-apache
+FROM php:8.2-apache
 
-# Install system dependencies
+# Install ekstensi PHP yang dibutuhkan CodeIgniter 4
 RUN apt-get update && apt-get install -y \
-    git \
-    curl \
-    libpng-dev \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libonig-dev \
-    libxml2-dev \
-    libzip-dev \
-    default-mysql-client \
     libicu-dev \
+    libzip-dev \
     zip \
     unzip \
-    default-mysql-client
+    git \
+    && docker-php-ext-install intl mysqli pdo pdo_mysql zip
 
-# Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+# Aktifkan mod_rewrite Apache (wajib untuk CI4)
+RUN a2enmod rewrite
 
-# Install PHP extensions
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd intl mysqli zip
+# Ubah DocumentRoot Apache ke folder public CI4
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-# Enable Apache rewrite module
-RUN a2enmod rewrite headers
+# Salin semua file ke dalam container
+COPY . /var/www/html/
 
-# Get latest Composer
+# Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Set working directory
-WORKDIR /var/www/html
+# Install dependencies (jika vendor belum di-commit)
+RUN composer install --no-dev --optimize-autoloader || true
 
-# Copy existing application directory permissions
-COPY --chown=www-data:www-data . /var/www/html
+# Atur permission folder writable
+RUN chown -R www-data:www-data /var/www/html/writable /var/www/html/public/uploads
+RUN chmod -R 775 /var/www/html/writable /var/www/html/public/uploads
 
-# Copy entrypoint script
-COPY docker-entrypoint.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-
-# Change owner for apache
-RUN chown -R www-data:www-data /var/www/html
-
-# Expose port 80
+# Port yang digunakan Render
 EXPOSE 80
-
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["apache2-foreground"]
