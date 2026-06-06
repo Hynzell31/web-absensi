@@ -1,0 +1,214 @@
+ERROR - 2026-06-05 15:38:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_absensi', 3306, '', 0)
+#1 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(766): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(160): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(766): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(160): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#10 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-06-05 15:39:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_absensi', 3306, '', 0)
+#1 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Database.php(72): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Seeder.php(98): CodeIgniter\Database\Config::forge(NULL)
+#5 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#9 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Database.php(72): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Seeder.php(98): CodeIgniter\Database\Config::forge(NULL)
+#4 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#8 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-06-05 15:39:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: CLI, Route: db:seed/DatabaseSeeder]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\Database.php(72): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(98): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-06-05 15:47:35 --> mysqli_sql_exception: Duplicate entry '1' for key 'tb_kehadiran.PRIMARY' in D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\app\Database\Seeds\KehadiranSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Seeder.php(149): App\Database\Seeds\KehadiranSeeder->run()
+#7 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\app\Database\Seeds\DatabaseSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Database\Seeder.php(149): App\Database\Seeds\DatabaseSeeder->run()
+#9 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#13 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\vendor\codeigniter4\framework\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 D:\New folder (3)\New folder (3)\absensi-sekolah-qr-code-1.9.10 (1)\absensi-sekolah-qr-code-1.9.10\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2026-06-05 18:41:59 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:01 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:08 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:16 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:19 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:31 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:33 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:39 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:42:43 --> ErrorException: Undefined array key "nis"
+[Method: POST, Route: scan/cek]
+in APPPATH\Controllers\Scan.php on line 192.
+ 1 APPPATH\Controllers\Scan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nis"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Controllers\\Scan.php', 192)
+ 2 APPPATH\Controllers\Scan.php(78): App\Controllers\Scan->absenPulang(Object(App\Libraries\enums\TipeUser), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Scan->cekKode()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Scan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
+CRITICAL - 2026-06-05 18:49:53 --> ErrorException: Undefined array key "jurusan"
+[Method: POST, Route: admin/kelas/list-data]
+in APPPATH\Views\admin\kelas\list-kelas.php on line 17.
+ 1 APPPATH\Views\admin\kelas\list-kelas.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jurusan"', 'D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Views\\admin\\kelas\\list-kelas.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\app\\Views\\admin\\kelas\\list-kelas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/kelas/list-kelas', [], true)
+ 5 APPPATH\Controllers\Admin\KelasController.php(50): view('admin/kelas/list-kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\KelasController->listData()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KelasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\New folder (3)\\New folder (3)\\absensi-sekolah-qr-code-1.9.10 (1)\\absensi-sekolah-qr-code-1.9.10\\public\\index.php')
